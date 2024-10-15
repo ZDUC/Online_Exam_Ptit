@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .nav-item {
+    @apply inline-block mr-10 text-white hover:text-slate-200 text-xl;
+  }
+
+  .form-login-register {
+    @apply min-w-fit min-h-[100px] py-[32px] px-[24px] text-center bg-white rounded-xl m-6 self-center shadow-md;
+  }
+
+  .form-input {
+    @apply mt-1 text-left h-10 px-3 py-2 rounded-sm text-sm border-solid border-[1px] border-[#b3b3b3] hover:border-[#1dbfaf];
+  }
+
+  .form-submit {
+    @apply bg-ptit mt-3 py-3 px-4 font-semibold text-white w-full rounded-md cursor-pointer hover:bg-[#f33a58];
+  }
+}
+
+@layer utilities {
+}
